@@ -100,7 +100,7 @@ if app_page == "Visualization":
     #st_profile_report(profile)
 
     st.write('Map of Global Happiness for 2023, based off of World Happiness Report Dataset 2023, courtesy of Visual Capitalist.')
-    image2 = Image.open('gdp_inde.jpg')
+    image2 = Image.open('worlds-happiest-countries-2023-MAIN.jpg')
     st.image(image2, width=400)
 
     st.write('Map of global GDP for 2022, courtesy of World Bank: ')
