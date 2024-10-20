@@ -15,7 +15,8 @@ Check out the live app here: [Project Happiness](https://projecthappiness.stream
 To run this app locally, clone the repository and install the required packages. 
 
 ```bash
-git clone https://github.com/yourusername/project-happiness.git
-cd project-happiness
+git clone https://github.com/giriaruna/project_happiness.git
+cd project_happiness
 pip install streamlit pandas seaborn matplotlib scikit-learn
 streamlit run app.py
+
