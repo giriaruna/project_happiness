@@ -45,11 +45,6 @@ if app_page == "Overview":
     st.write("Statistics on the dataset: ")
     st.dataframe(df.describe())
     
-    st.write("Source: https://www.kaggle.com/datasets/atom1991/world-happiness-report-2023 ")
-    
-    st.subheader("Our Goals")
-    st.write("The goals of our project are to analyze the factors which effect a person's happiness, and to discover how one's happiness can affect their life expectancy.")
-   
     st.subheader("Missing values")
     dfnull = df.isnull()/len(df)*100
     total_missing = (dfnull.sum()).round(2)
@@ -58,6 +53,12 @@ if app_page == "Overview":
 
     if total_missing[0] == 0.0:
             st.success("Congrats you have now missing values")
+
+    st.write("Source: https://www.kaggle.com/datasets/atom1991/world-happiness-report-2023 ")
+    
+    st.subheader("Our Goals")
+    st.write("The goals of our project are to analyze the factors which effect a person's happiness, and to discover how one's happiness can affect their life expectancy.")
+   
 
 if app_page == "Visualization":
     st.subheader("Data Visualization")
