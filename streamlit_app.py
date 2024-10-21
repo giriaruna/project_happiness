@@ -139,12 +139,22 @@ if app_page == 'Prediction':
     mse = np.round(mt.mean_squared_error(y_test, pred), 2)
     r_square = np.round(mt.r2_score(y_test, pred), 2)
 
+    # Create a comparison DataFrame to visualize Actual vs Predicted values
+    comparison_df = pd.DataFrame({'Actual Values': y_test, 'Predicted Values': pred})
+
+    # Display the first 10 rows of the comparison DataFrame
+    st.write("### Comparison of Actual vs. Predicted Values")
+    st.write(comparison_df.head(10))
+    
     # Display results
     st.subheader('🎯 Results')
     st.write("1) The model explains,", explained_variance, "% variance of the target feature")
     st.write("2) The Mean Absolute Error of the model is:", mae)
     st.write("3) MSE: ", mse)
     st.write("4) The R-Square score of the model is", r_square)
+
+    
+
 
     # Plotting the Linear Regression line
     st.subheader('📈 Linear Regression Line')
