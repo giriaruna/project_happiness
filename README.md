@@ -11,11 +11,6 @@ Check out the live app here: [Project Happiness](https://projecthappiness.stream
 - Visualize data with charts and heatmaps
 - Predict life expectancy using happiness scores
 
-## Team Members
-- Aruna Giri
-- @lorriesavage
-- @tanvikunte
-
 ## Getting Started
 To run this app locally, clone the repository and install the required packages.
 
